@@ -14,7 +14,7 @@ class Program
             string userResponse = Console.ReadLine();
             userNumber = int.Parse(userResponse);
             
-            // Only add the number to the list if it is not 0
+            // Only add the number to the list if it is not 0 because 0 is to quit 
             if (userNumber != 0)
             {
                 numbers.Add(userNumber);
@@ -35,7 +35,6 @@ class Program
         Console.WriteLine($"The average is: {average}");
 
         // Part 3: Find the max
-        // There are several ways to do this, such as sorting the list
         
         int max = numbers[0];
 
@@ -43,7 +42,6 @@ class Program
         {
             if (number > max)
             {
-                // if this number is greater than the max, we have found the new max!
                 max = number;
             }
         }
